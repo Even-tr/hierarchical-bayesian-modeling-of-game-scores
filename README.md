@@ -30,11 +30,11 @@ The hierarchical model assumes the following structure:
 We must therefore simply determine these probability distributions, and Bayes' rule will dictate the rest. Again I assume a normal model for both of these since they are conjugate:
 
 $$
-\theta_i \sim N(\mu_theta, \sigma^2_\theta)
+\theta_i \sim N(\mu_{\theta}, \sigma^2_{\theta})
 $$
 
 $$
-\sigma_j \sim N(\mu_sigma, \sigma^2_\sigma)
+\sigma_j \sim N(\mu_{\sigma}, \sigma^2_{\sigma})
 $$
 
 Finally, we need a prior on all the variances $\sigma^2_y, \sigma^2_{\theta}, \sigma^2{\sigma}$. Since an inverse gamma is conjugate, I chose this with somewhat vague distribution, reflecting that I have no real idea of what the values should be.
